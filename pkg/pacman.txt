@@ -77,15 +77,12 @@ acpi
 qt5-wayland
 qt6-wayland
 kvantum
-hyprqt6engine
 hyprland-qt-support
 
 # =================================================
 # CURSOR (WAYLAND + FALLBACK)
 # =================================================
 hyprcursor
-bibata-hyprcursor
-bibata-cursor-theme
 
 # =================================================
 # FONTS
