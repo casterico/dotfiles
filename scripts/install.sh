@@ -4,8 +4,8 @@ set -e
 # -------------------------------------------------
 # CONFIG
 # -------------------------------------------------
-PACMAN_LIST="pkg/pacman.txt"
-AUR_LIST="pkg/aur.txt"
+PACMAN_LIST="../pkg/pacman"
+AUR_LIST="../pkg/aur"
 
 # -------------------------------------------------
 # CHECKS
