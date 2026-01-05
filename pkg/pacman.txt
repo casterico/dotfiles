@@ -1,0 +1,130 @@
+# =================================================
+# BASE SYSTEM / CORE TOOLS
+# =================================================
+base-devel
+git
+curl
+wget
+zip
+unzip
+man-db
+man-pages
+
+# =================================================
+# STORAGE / REMOVABLE MEDIA
+# =================================================
+udisks2
+udiskie
+
+# =================================================
+# NETWORK / BLUETOOTH
+# =================================================
+networkmanager
+network-manager-applet
+bluez
+bluez-utils
+blueman
+
+# =================================================
+# AUDIO (PIPEWIRE)
+# =================================================
+pipewire
+pipewire-audio
+pipewire-pulse
+wireplumber
+pavucontrol
+
+# =================================================
+# WAYLAND / DESKTOP INTEGRATION
+# =================================================
+xdg-desktop-portal
+xdg-desktop-portal-hyprland
+
+# =================================================
+# SCREEN / RECORDING / CLIPBOARD
+# =================================================
+grim
+slurp
+wf-recorder
+wl-clipboard
+cliphist
+
+# =================================================
+# UI: BAR / LAUNCHER / NOTIFICATIONS
+# =================================================
+waybar
+rofi
+swaync
+
+# =================================================
+# TERMINAL / FILE MANAGEMENT
+# =================================================
+kitty
+nautilus
+file-roller
+yazi
+
+# =================================================
+# POWER / INPUT / HARDWARE
+# =================================================
+brightnessctl
+power-profiles-daemon
+acpi
+
+# =================================================
+# QT / WAYLAND / THEMING
+# =================================================
+qt5-wayland
+qt6-wayland
+kvantum
+hyprqt6engine
+hyprland-qt-support
+
+# =================================================
+# CURSOR (WAYLAND + FALLBACK)
+# =================================================
+hyprcursor
+bibata-hyprcursor
+bibata-cursor-theme
+
+# =================================================
+# FONTS
+# =================================================
+noto-fonts
+noto-fonts-emoji
+ttf-jetbrains-mono-nerd
+
+# =================================================
+# UTILITIES / QUALITY OF LIFE
+# =================================================
+fastfetch
+htop
+bat
+fd
+ripgrep
+jq
+tree
+
+# =================================================
+# APPLICATIONS
+# =================================================
+firefox
+code
+flatpak
+
+# =================================================
+# SHELL / CLI ENVIRONMENT
+# =================================================
+fish
+micro
+
+# =================================================
+# HYPRLAND ECOSYSTEM
+# =================================================
+hyprland
+hyprpaper
+hyprpicker
+hyprlock
+hypridle
+hyprpolkitagent
+hyprsunset

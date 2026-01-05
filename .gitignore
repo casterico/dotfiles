@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Temp
+*.swp
+*.tmp
+
+# Secrets (por si acaso)
+.env
