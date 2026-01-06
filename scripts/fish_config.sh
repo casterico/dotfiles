@@ -38,6 +38,9 @@ cp -f "$REPO_ROOT/config/starship/starship.toml" "$HOME/.config/starship.toml"
 echo "==> Copying kitty.conf..."
 cp -f "$REPO_ROOT/config/kitty/kitty.conf" "$HOME/.config/kitty/Kitty.conf"
 
+echo "==> Copying kitty Themes..."
+cp -f "$REPO_ROOT/config/kitty/themes/catppuccin-mocha.conf" "$HOME/.config/kitty/themes/catppuccin-mocha.conf"
+
 # -------------------------------------------------
 # Set fish as default shell
 # -------------------------------------------------
