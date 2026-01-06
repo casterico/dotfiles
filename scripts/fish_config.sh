@@ -34,4 +34,7 @@ cp -f "$REPO_ROOT/config/fish/config.fish" "$HOME/.config/fish/config.fish"
 echo "==> Copying starship.toml..."
 cp -f "$REPO_ROOT/config/starship/starship.toml" "$HOME/.config/starship.toml"
 
+echo "==> Copying kitty.conf..."
+cp -f "$REPO_ROOT/config/kitty/kitty.con" "$HOME/.config/kitty/Kitty.conf"
+
 echo "✅ Fish configuration complete"
