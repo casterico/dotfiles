@@ -18,7 +18,7 @@ style = "bold cyan"
 # --------------------
 [git_status]
 format = "[  ](bold purple)"
-disable = false
+disabled = false
 # --------------------
 # Git Branch (!=main)
 # --------------------
