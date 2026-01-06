@@ -64,4 +64,11 @@ else
     echo "❌ Fish is not installed"
 fi
 
+# -------------------------------------------------
+# Install Micro plugins
+# -------------------------------------------------
+echo "==> Instaling Micro Plugins"
+micro -plugin install filemanager autocomplete syntax autoclose linter literate status ftoptions diff comment
+
+
 echo "✅ Fish configuration complete"
