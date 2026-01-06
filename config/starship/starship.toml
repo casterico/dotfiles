@@ -1,12 +1,20 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
 add_newline = false
 
 format = "$directory$git_branch$git_status$character"
 
+# --------------------
+# Directory
+# --------------------
 [directory]
-style = "cyan"
 truncation_length = 3
 truncate_to_repo = true
+style = "cyan"
 
+# --------------------
+# Git (only in repo)
+# --------------------
 [git_branch]
 symbol = ""
 format = " [$branch]"
@@ -15,6 +23,9 @@ style = "green"
 [git_status]
 disabled = true
 
+# --------------------
+# Prompt symbol
+# --------------------
 [character]
 success_symbol = "❯"
 error_symbol = "❯"

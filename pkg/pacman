@@ -115,6 +115,7 @@ flatpak
 # SHELL / CLI ENVIRONMENT
 # =================================================
 fish
+starship
 fzf
 micro
 
