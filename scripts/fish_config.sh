@@ -7,6 +7,7 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 # Ensure config dir
 mkdir -p "$HOME/.config/fish"
 mkdir -p "$HOME/.config"
+mkdir -p "$HOME/.config/kitty/themes"
 
 # -------------------------------------------------
 # Install fisher
