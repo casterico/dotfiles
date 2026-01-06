@@ -1,31 +1,29 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-add_newline = false
+add_newline = true
 
-format = "$directory$git_branch$git_status$character"
+format = "$directory$git_status$git_branch\n $character"
 
 # --------------------
 # Directory
 # --------------------
 [directory]
+format = "[ 󰝰](cyan) [$path]($style)"
 truncation_length = 3
-truncate_to_repo = true
-style = "cyan"
+truncate_to_repo = false
+style = "bold cyan"
 
 # --------------------
-# Git (only in repo)
+# Git Logo (only in repo)
+# --------------------
+[git_status]
+format = "[  ](bold purple)"
+disable = false
+# --------------------
+# Git Branch (!=main)
 # --------------------
 [git_branch]
-symbol = "󰊢"
-format = " [$branch]($style)"
-style = "green"
-
-[git_status]
-disabled = true
-
-# --------------------
-# Prompt symbol
-# --------------------
-[character]
-success_symbol = "❯"
-error_symbol = "❯"
+symbol = ""
+ignore_branches = ["main"]
+format = "[$branch](bold yellow)"
+style = "bold green"
