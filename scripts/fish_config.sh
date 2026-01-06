@@ -37,4 +37,26 @@ cp -f "$REPO_ROOT/config/starship/starship.toml" "$HOME/.config/starship.toml"
 echo "==> Copying kitty.conf..."
 cp -f "$REPO_ROOT/config/kitty/kitty.con" "$HOME/.config/kitty/Kitty.conf"
 
+# -------------------------------------------------
+# Set fish as default shell
+# -------------------------------------------------
+if command -v fish >/dev/null 2>&1; then
+    FISH_PATH="$(command -v fish)"
+
+    if ! grep -q "$FISH_PATH" /etc/shells; then
+        echo "==> Adding fish to /etc/shells (requires sudo)"
+        echo "$FISH_PATH" | sudo tee -a /etc/shells >/dev/null
+    fi
+
+    if [ "$SHELL" != "$FISH_PATH" ]; then
+        echo "==> Setting fish as default shell (requires password)"
+        chsh -s "$FISH_PATH"
+        echo "➡️  Logout or reboot required for shell change to take effect"
+    else
+        echo "==> Fish is already the default shell"
+    fi
+else
+    echo "❌ Fish is not installed"
+fi
+
 echo "✅ Fish configuration complete"
