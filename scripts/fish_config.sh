@@ -2,6 +2,7 @@
 set -euo pipefail
 
 echo "==> Configuring fish shell..."
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 # Ensure config dir
 mkdir -p "$HOME/.config/fish"
