@@ -32,7 +32,7 @@ if [[ ! -f "$HOME/.config/fish/tide/config.fish" ]]; then
   echo "==> Configuring tide..."
   fish -c "tide configure --auto \
     --style=Lean \
-    --prompt_colors=Default \
+    --prompt_colors=True \
     --show_time=No \
     --lean_prompt_height=One \
     --prompt_connection=Solid \
