@@ -25,11 +25,8 @@ fi
 if [ -f "$REPO_ROOT/config/theming/kvantum/kvantum.kvconfig" ]; then
   cp -f "$REPO_ROOT/config/theming/kvantum/kvantum.kvconfig" "$HOME/.config/Kvantum/kvantum.kvconfig"
   echo "  - kvantum.kvconfig copied"
-fi
-
-if [ -d "$REPO_ROOT/config/kvantum" ]; then
-  # Copy themes folders inside Kvantum (excluding kvconfig already copied)
-  rsync -a --exclude 'kvantum.kvconfig' "$REPO_ROOT/config/theming/kvantum/" "$HOME/.config/Kvantum/"
+  # Copy themes folders inside Kvantum
+  cp -r "$REPO_ROOT/config/theming/kvantum/catppuccin-mocha-blue/"* "$HOME/.config/Kvantum/catppuccin-mocha-blue"
   echo "  - Kvantum themes synced"
 fi
 
