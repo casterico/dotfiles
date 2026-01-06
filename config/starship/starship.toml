@@ -16,8 +16,8 @@ style = "cyan"
 # Git (only in repo)
 # --------------------
 [git_branch]
-symbol = ""
-format = " [$branch]"
+symbol = "󰊢"
+format = " [$branch]($style)"
 style = "green"
 
 [git_status]
