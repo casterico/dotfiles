@@ -79,7 +79,9 @@ qt6-wayland
 qt5ct
 qt6ct
 kvantum
+kvantum-qt5
 hyprland-qt-support
+catppuccin-gtk-theme
 
 # =================================================
 # CURSOR (WAYLAND + FALLBACK)
